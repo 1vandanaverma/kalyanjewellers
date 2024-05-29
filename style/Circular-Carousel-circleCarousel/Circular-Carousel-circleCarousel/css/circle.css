@@ -1,0 +1,376 @@
+
+/*
+	create by nasir farhadi
+	email : nasirfarhadi92@gmail.com
+	Github : nasirfarhadi92
+*/
+
+	.holderCircle{
+		width:620px;
+		height:620px;
+		border-radius:100%;
+		margin:60px auto;
+		position:relative;
+	}
+	
+	/* .holderCircle::after{
+		content:'';
+		width:500px;
+		height:500px;
+		border-radius:100%;
+		border:1px solid #000;
+		position:absolute;
+		top:0;
+	} */
+
+	.dotCircle{
+		width:100%;
+		height:100%;
+		position:absolute;
+		margin:auto;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		border-radius:100%;
+		z-index:20;
+	}
+
+	.dotCircle  .itemDot{
+		display:block;
+		width:140px;
+		height:140px;
+		position:absolute;
+		background:#910606;
+		color:#252323;
+		border-radius:100%;
+		text-align: center;
+		line-height: 80px;
+		font-size:20px;
+		z-index:3;
+		cursor:pointer;		
+	}
+	
+	.dotCircle  .itemDot::after {
+		content:"";
+		width: 136px;
+		height:136px;
+		position: absolute;
+		border-radius: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index:2;
+		border:3px solid #5b4607;
+	}
+	.dotCircle  .itemDot::before{
+		content:"";
+		width: 138px;
+		height: 138px;
+		position: absolute;
+		border-radius: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index:2;
+		border:3px solid;
+		
+	}
+	
+	
+	.dotCircle  .itemDot1{
+		background-image: url("../../../../assets/jewellery/rings/gold-rings.jpg");
+		background-size: 150%;
+		background-repeat: no-repeat;
+		background-position-y: 50%;
+		object-fit:fill;
+	}
+	.dotCircle  .itemDot1::after	{
+		
+	}
+	.dotCircle  .itemDot1::before{
+		border-color:#544410;
+	}
+	
+	
+	.dotCircle  .itemDot2{
+		background-image: url("../../../../assets/jewellery/earings/earing_down.jpg");
+		background-size: 130%;
+		background-repeat: no-repeat;
+		object-fit:fill;
+	}
+	.dotCircle  .itemDot2::after	{
+		
+	}
+	.dotCircle  .itemDot2::before{	
+		border-color:#544410;
+	}
+
+	.dotCircle  .itemDot3{
+		background-image: url("../../../../assets/jewellery/necklace/set_2_down.jpg");
+		background-size: 150%;
+		background-repeat: no-repeat;
+		object-fit:fill;
+	}
+	
+	.dotCircle  .itemDot3::after	{	
+		
+	}
+	.dotCircle  .itemDot3::before{
+		border-color:#544410;
+	}
+	
+	.dotCircle  .itemDot4{
+		background-image: url("../../../../assets/jewellery/necklace/set_down.jpg");
+		background-size: 150%;
+		background-repeat: no-repeat;
+		background-position-x: 50%;
+		background-position-y: 50%;
+		object-fit:fill;
+	}
+	
+	.dotCircle  .itemDot4::after{
+	
+	}
+	.dotCircle  .itemDot4::before{
+	border-color:#544410;
+	}
+	
+	.dotCircle  .itemDot5{
+		background-image: url("../../../../assets/jewellery/Bangels/bangel_down.jpg");
+		background-size: 145%;
+		background-repeat: no-repeat;
+		object-fit:fill;
+		background-position-y: 50%;
+		background-position-x: 35%;
+		
+	}
+	
+	.dotCircle  .itemDot5::after{
+	
+	}
+	.dotCircle  .itemDot5::before{	
+	border-color:#544410;
+	}
+	
+	
+	
+	
+	/* .dotCircle .itemDot.active{
+		background:#6e0313;
+		color:#08f903;
+		transition:0.5s;
+	} */
+	.dotCircle .itemDot.active::before{
+		border-color:#544410;
+	}	
+	
+	.dotCircle  .itemDot .forActive{
+		width:56px;
+		height:56px;
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		display:none;
+	}
+	
+	.dotCircle  .itemDot .forActive::after{
+		content: '';
+		width: 5px;
+		height: 5px;
+		border: 3px solid #FE9290;
+		bottom: -31px;
+		left: -14px;
+		filter: blur(1px);
+		position: absolute;
+		border-radius: 100%;
+	}
+	
+	.dotCircle  .itemDot .forActive::before{
+		content: '';
+		width: 6px;
+		height: 6px;
+		filter: blur(5px);
+		top: -15px;
+		position: absolute;
+		transform: rotate(-45deg);
+		border: 6px solid #F48E2A;
+		right: -39px;
+	}
+	
+	
+	.dotCircle  .itemDot.active .forActive{
+		display:block;
+	}
+	
+	
+	.dotCircle .itemDot:hover{
+		background:#34495e;
+		color:#fff;
+		transition:0.5s;
+	}
+	.dotCircle .itemDot:hover::before{
+		border-color:#34495e;
+	}	
+	
+	
+	
+	
+	
+	
+	.contentCircle{
+		width: 340px;
+		height: 340px;
+		border-radius: 100%;
+		background: url("../../../../assets/logo/KJ-logo-png.png") no-repeat;
+		background-size: 100%;
+		color: #fff;
+		position: relative;
+		top: 137px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		box-shadow: 0px 0px 69px 1px #2b152e;
+		margin: auto;
+	}
+	
+	.contentCircle .CirItem{
+		border-radius: 100%;
+		color: #fff;
+		position: absolute;
+		text-align: center;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		transform: scale(0);
+		transition: 0.5s;
+		font-weight: bold;
+		font-size: 13px;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		margin: auto;
+		background: #00000054;
+		line-height: 250px;
+	}
+	
+	.CirItem.active{
+		z-index:1;
+		opacity:1;
+		transform:scale(1);
+		transition:1.5s;
+	}
+	
+	
+	.contentCircle .CirItem1{
+		background-image: url("../../../../assets/jewellery/necklace/chains-down.jpg");
+		background-size: 150%;
+		background-repeat: no-repeat;
+		background-position-x: 50%;
+		background-position-y: 50%;
+		object-fit:fill;
+	}
+	.contentCircle .CirItem1::after,
+	.contentCircle .CirItem2::after,
+	.contentCircle .CirItem3::after,
+	.contentCircle .CirItem4::after,
+	.contentCircle .CirItem5::after{
+		content:'';
+		width:50%;
+		height:100%;
+		border-bottom-left-radius: 250px;
+		border-top-left-radius: 250px;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:-1;
+		background:rgba(0, 0, 0, 0.33);
+	}
+	.contentCircle .CirItem2{
+		background-image: url("../../../../assets/jewellery/earings/aesthetic-model-earing.jpg");
+		background-size: 145%;
+		background-position-x: 50%;
+		background-position-y: 35%;
+		background-repeat: no-repeat;
+		object-fit:fill;
+	}
+	.contentCircle .CirItem3{
+		background-image: url("../../../../assets/jewellery/braclets/braclet+ring_down.jpg");
+		background-size: 150%;
+		background-repeat: no-repeat;
+		object-fit:fill;
+		background-position-x: 60%;
+	}
+	.contentCircle .CirItem4{
+		background-image: url("../../../../assets/jewellery/earings/model-earing\ down.jpg");
+		background-size: 150%;
+		background-repeat: no-repeat;
+		background-position-x: 50%;
+		background-position-y: 50%;
+		object-fit:fill;
+	}
+	.contentCircle .CirItem5{
+		background-image: url("../../../../assets/jewellery/Bangels/gold-body-down.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		object-fit:fill;
+	}
+
+	
+	@media only screen and (min-width: 300px) and (max-width: 599px){
+	
+		.holderCircle {
+			width: 300px;
+			height: 300px;
+			margin:110px auto;
+		}
+		.holderCircle::after {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.dotCircle{
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+
+		}
+	
+	
+	}
+	@media only screen and (min-width: 600px) and (max-width: 767px){
+	
+	}
+	@media only screen and (min-width: 768px) and (max-width: 991px){
+	
+	}
+	@media only screen and (min-width: 992px) and (max-width: 1199px){
+	
+	}
+	@media only screen and (min-width: 1200px) and (max-width: 1499px){
+	
+	}
+	
+	@media only screen and (min-width: 1500px) {
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

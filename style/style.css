@@ -1,0 +1,451 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: #090909;
+    border: 5px solid black;
+    margin: 0%;
+    background-image: linear-gradient(90deg,#846622 0%, #d4a133 35%, #ffec98 100%);
+}
+
+header{
+    background-color: black;
+}
+nav{
+    display: flex;
+    background-color: #f6d64a;
+    padding: 15px;
+    text-align: center;
+    /* box-sizing: border-box; */ 
+}
+nav a{
+    color: rgb(11, 11, 11);
+    font-size: 20px;
+    text-decoration:none;
+    font-style:italic;
+    text-shadow: 1px 1px 2px rgb(77, 78, 16);
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav a:hover{
+    background-color: #51504f;
+    padding: 20px;
+    color: rgb(255, 249, 255);
+}
+
+h2{
+    color: rgb(20, 15, 18);
+    text-align: center;
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: lighter;
+    font-style: oblique;
+    text-decoration: none;
+    object-fit:cover;
+    padding: 8px;
+}
+.background{
+    background-image: url("..//assets/logo/kj-lamba-banner.png");
+    background-position: center;
+    background-size: 99%;
+    height: 370px;
+    width: 1500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-y: 83%;
+}
+section{
+    padding: 10px;
+}
+p{
+    color: rgb(6, 71, 93);
+}
+.collage{
+    display: grid;
+    grid-template-columns:400px 400px 400px;
+    grid-template-rows: 200px 200px 200px ;
+    grid-gap: 35px;
+    grid-auto-rows: minmax(200px,auto);
+    grid-auto-columns: minmax(100px,auto);
+    padding-left: 8%;
+}
+.image{
+    background-color: rgb(10, 10, 10);
+    border:5px #544410;
+    border-radius: 5%;
+}
+#img2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url("../assets/jewellery/necklace/haar-&-earing-down.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	object-fit:fill;
+}
+#img3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url("../assets/jewellery/necklace/haar-model-down.jpg" );
+	background-size: 100%;
+	background-repeat: no-repeat;
+	object-fit:fill;
+}
+#img4{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url("../assets/jewellery/rings/ring-blue-down.jpg" );
+	background-size: 100%;
+	background-repeat: no-repeat;
+	object-fit:fill;
+}
+#img5{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url("../assets/jewellery/rings/ring_down.jpg" );
+	background-size: 100%;
+	background-repeat: no-repeat;
+	object-fit:fill;
+}
+#img6{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url("../assets/jewellery/Bangels/bangelsmonths\ down.jpg" );
+	background-size: 100%;
+	background-repeat: no-repeat;
+	object-fit:fill;
+    background-position-y: 45%;
+}
+#img1{
+    background-image: url("../assets/jewellery/necklace/daimond-necklace.jpg" );
+	background-size: 105%;
+    background-repeat: no-repeat;
+	object-fit:fill;
+    background-position-y: 40%;
+    background-position-x: 30%;
+}
+.festive img{
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    margin: 20px;
+    background-color: #544410;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 3px solid black;
+    
+}
+.shop img{
+    width: 250px;
+    height: 300px;
+    margin-left: 30px;
+    border-radius: 10%;
+    object-fit: cover;
+    
+}
+
+footer{
+    width: 1448px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+}
+.row{
+    display: flex;
+    box-sizing: border-box;
+    padding: 2%;
+    gap: 5px 10px;
+    justify-content: center;
+    background-color: #f9dc68;
+}
+.group{
+    padding: 1.5%;
+    display: flex;
+    align-content: stretch;
+    width: 100%;
+    gap: 10px 10px;
+    justify-content: center;
+}
+.container{
+    background-color: #f9dc68;
+}
+.registation{
+    background-color: #f9dc68;
+    width: 1200px;
+    height: 60px;
+}
+.footer-bottom{
+    background-color: #a77f1a;
+    height: 350px;
+}
+.arrow{
+    background-color: #b00909;
+    width: 10%;
+    cursor: pointer;
+}
+.familykj{
+    display: flex;
+    flex: 1 1 auto;
+    width: 1%;
+    z-index: 2;
+}
+footer a{
+    color: #fbfbf9;
+}
+.heading{
+    padding: 4px 15px;
+    margin-right: 3px;
+    letter-spacing: 1px;
+    background-color: #fbfbf9;
+    border: 1px solid #090909;
+}
+i{
+    font-size: 12px;
+    color: #090909;
+    text-shadow: #ecf800;
+}
+.text{
+    background-color: #fbfbf9;
+    
+}
+.contain{
+    width: 1450px;
+    height: 110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rows{
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    gap: 5px 10px;
+    padding: 2px;
+    width: 1400px;
+    font-size: 16px;
+    
+    
+}
+.social-media{
+    width: 1400px;
+    display:flex ;
+    color: #100f0f;
+    
+    text-align: center;
+    
+    margin-right: 15px;
+    margin-left: 15px;
+    gap: 5px 10px;
+    padding: 2px;
+    
+}
+.call{
+    position: relative;
+    width: 200px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+.whatsapp{
+    width:200px;
+}
+.social-media a{
+    color: #0c0c0c;
+    
+}
+
+.gmail{
+    position: relative;
+    width: 350px;
+    min-height: 1px;
+    gap: 10px 10px;
+    padding: 8px;
+    
+}
+.address{
+    width: 400px;
+    padding: 5px;
+}
+.copyright a{
+    padding-top: 3px;
+    color: #090909;
+    font-size: 10px;
+    text-align: center;
+
+}
+.copyright a:hover{
+    background-color:#ecf800;
+    padding: 8px;
+    font-weight: 10%;
+} 
+.call a:hover,.whatsapp a:hover,.gmail a:hover,.address a:hover{
+    background-color:#fbfe60;
+    padding: 8px;
+    
+}
+section p:hover{
+    color: rgb(32, 14, 70);
+}
+section:hover{
+    color: rgb(11, 220, 157);
+}
+.app{
+    display:inline-block;
+    width: 400px;
+    flex: 0 0 25%;    
+}
+footer .names{
+    list-style: none;
+}
+footer .names li{
+    display: inline-block;
+}
+li i,a i{
+    font-size:2em;
+    
+}
+li i:hover{
+    background-color: #ffffff;
+    transition: 0.5s;
+    opacity: 1;
+    padding: 5px;
+}
+.right{
+    text-align:center;
+    padding: 5px;
+    font-size: 15px;
+    color: #403d3d;
+    
+}
+.right p:hover{
+    transition: 0.5s;
+    background-color: #7c6f62;
+    
+}
+footer .waves{
+    height: 60px;
+    background-color: #f9dc68;
+}
+footer .wave{
+    position:absolute;
+    top:4298px;
+    
+    width: 1448px;
+    height: 100px;
+    background: url("../assets/wave2.png");
+    background-size: 1000px 100px;
+
+
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animatewave_02 3s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animatewave 4s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animatewave_02 3s linear infinite;
+}
+@keyframes animatewave{
+    0%{
+        background-position-x: 1000px;
+
+    }
+    50%{
+        background-position-x: 555px;  
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animatewave_02{
+    0%{
+        background-position-x: 0px;
+
+    }
+    50%{
+        background-position-x: 555px;  
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+.banner{
+    background-image: url("../assets/logo/kalyan-gif.gif");
+    height: 12vw;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 50%;
+    background-position-y: -38%;
+    background-attachment: fixed;
+}
+section h2 span{
+    background: rgb(251,244,3);
+    background: radial-gradient(circle, rgba(251,244,3,1) 0%, rgba(187,179,29,1) 36%, rgb(128, 110, 20) 100%);
+    padding:10px 55px;
+    border-radius: 30px;
+}
+
+.carousel-cell {
+  width: 50%;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+  color: #090909;
+    text-decoration: none;
+    font-style:italic;
+    text-shadow: 1px 1px 2px rgb(111, 112, 9);
+    padding:5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.carousel-cell img {
+    max-width: 100%;
+
+}
+/* "css responsiveness in web development lecture 13" */
+@media screen and (width: 600px) {
+    body {
+        color:chocolate;
+    }
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
+@media screen and(max-width: 700px){
+    nav{
+        flex-direction: columns;
+    }
+}
